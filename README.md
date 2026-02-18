@@ -1,6 +1,6 @@
 # Validate VAT — GitHub Action
 
-Validate European VAT numbers in your CI/CD pipeline using the [VeriCorp API](https://rapidapi.com/vericorp/api/vericorp-api).
+Validate European VAT numbers in your CI/CD pipeline using the [VeriCorp API](https://rapidapi.com/vericorptestcollab/api/vericorp).
 
 ## Usage
 
