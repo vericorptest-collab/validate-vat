@@ -1,0 +1,15 @@
+{
+  "name": "validate-vat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist --minify",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.11.1",
+    "@vercel/ncc": "^0.38.3",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+name: "Validate VAT Numbers"
+description: "Validate European VAT numbers using the VeriCorp API. Supports 28 countries (27 EU + UK)."
+author: "VeriCorp"
+branding:
+  icon: "check-circle"
+  color: "green"
+
+inputs:
+  vat-numbers:
+    description: "VAT numbers to validate (one per line)"
+    required: true
+  api-key:
+    description: "RapidAPI key for VeriCorp API"
+    required: true
+  fail-on-invalid:
+    description: "Fail the action if any VAT number is invalid"
+    required: false
+    default: "false"
+
+outputs:
+  results:
+    description: "JSON array of validation results"
+  valid-count:
+    description: "Number of valid VAT numbers"
+  invalid-count:
+    description: "Number of invalid VAT numbers"
+  summary:
+    description: "Markdown table summary of results"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
